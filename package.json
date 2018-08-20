@@ -1,5 +1,15 @@
 {
   "devDependencies": {
-    "gulp": "^3.9.1"
-  }
+    "autoprefixer": "^9.1.2",
+    "gulp": "^3.9.1",
+    "gulp-postcss": "^8.0.0",
+    "gulp-sass": "^4.0.1",
+    "gulp-sass-glob": "^1.0.9",
+    "gulp-sourcemaps": "^2.6.4",
+    "postcss-cli": "^6.0.0"
+  },
+  "scripts": {
+    "build": "node node_modules/gulp/bin/gulp"
+  },
+  "dependencies": {}
 }

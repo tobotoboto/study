@@ -1,0 +1,83 @@
+* {
+  box-sizing: border-box;
+}
+
+html {
+  width: 100%;
+  height: auto;
+  min-height: 500px;
+  font-size: 75%;
+}
+
+body {
+  width: 100%;
+  min-width: 960px;
+  font-family: sans-serif;
+  line-height: 1.5;
+  word-break: break-all;
+  -webkit-font-smoothing: subpixel-antialiased;
+  -moz-osx-font-smoothing: unset;
+}
+a {
+  text-decoration: none;
+  transition: all .3s;
+  &:hover,
+  &:active,
+  &:focus {
+    text-decoration: underline;
+    opacity: .5;
+  }
+}
+
+button {
+  background-color: transparent;
+}
+
+label {
+  cursor: pointer;
+}
+fieldset, img {
+  border: 0;
+}
+img {
+  max-width: 100%;
+  vertical-align: top;
+}
+address, caption, cite, code, dfn, em, th, var {
+  font-style: normal;
+  font-weight: normal;
+}
+ol, ul {
+  list-style: none;
+  padding-left: 0;
+}
+
+menu, ol, ul {
+  padding: 0;
+}
+
+dl, menu, ol, ul {
+  margin: 0;
+}
+
+dd {
+  margin: 0;
+}
+
+caption, th {
+  text-align: left;
+}
+h1, h2, h3, h4, h5, h6 {
+  font-size: initial;
+  font-weight: bold;
+}
+strong, em {
+  font-weight: bold;
+}
+
+// IE11 SVGサイズ崩れハック
+@media screen and (-ms-high-contrast: active), (-ms-high-contrast: none) {
+  img[src$='.svg'] {
+    width: 100%;
+  }
+}

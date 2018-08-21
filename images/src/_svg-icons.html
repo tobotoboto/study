@@ -1,0 +1,71 @@
+<div class="sprite">
+
+  <div class="sprite-items">
+    <svg class="icon pin"><use xlink:href="#pin"></use></svg>
+    <p class='sprite-items-id'>pin</p>
+    <div class="sprite-items-code">
+        <pre><code>
+svg class="icon pin"
+  use xlink:href="#pin"
+
+</code></pre>
+    </div>
+  </div>
+
+  <div class="sprite-items">
+    <svg class="icon star"><use xlink:href="#star"></use></svg>
+    <p class='sprite-items-id'>star</p>
+    <div class="sprite-items-code">
+        <pre><code>
+svg class="icon star"
+  use xlink:href="#star"
+
+</code></pre>
+    </div>
+  </div>
+
+<svg xmlns="http://www.w3.org/2000/svg" style="display:none"><symbol id="pin" viewBox="0 0 7.076 9.869"><g transform="translate(3.539 4.936)"><path d="M3.539 0a3.531 3.531 0 0 0-3.4 4.5 12.435 12.435 0 0 0 3.4 5.362A12.425 12.425 0 0 0 6.94 4.5 3.531 3.531 0 0 0 3.539 0zm0 5.141a1.6 1.6 0 1 1 1.6-1.6 1.6 1.6 0 0 1-1.6 1.6z" transform="translate(-3.538 -4.935)"/></g></symbol><symbol id="star" viewBox="0 0 30 30"><path d="M14.744 0l3.827 10.413 10.916.485-8.551 6.92 2.92 10.714-9.112-6.136-9.112 6.136 2.92-10.713L0 10.899l10.917-.486z" fill-rule="evenodd"/></symbol></svg>
+</div>
+
+<style>
+  .sprite {
+    display: flex;
+    flex-wrap: wrap;
+    padding: 15px;
+    margin-left: -20px;
+  }
+  .sprite-items {
+    box-sizing: border-box;
+    width: calc(25% - 15px);
+    margin: 0 0 20px 15px;
+    padding: 20px 15px 0;
+    text-align: center;
+    background: #F4F4F4;
+    border: 1px solid black;
+  }
+
+  .sprite-items svg {
+    width: 80%;
+    max-width: 80%;
+    height: 100px;
+  }
+
+  .sprite-items-id {
+    text-align: center;
+    font-size: 13px;
+  }
+
+  .sprite-items-code {
+    padding: 5px 15px;
+    margin: 0 -15px 0;
+    background-color: black;
+    color: #fff;
+    font-size: 11px;
+    line-height: 1.1;
+  }
+
+  .sprite-items-code pre {
+    margin: 0;
+    text-align: left;
+  }
+</style>

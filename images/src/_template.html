@@ -1,0 +1,59 @@
+<div class="sprite">
+<% _.each(symbols, function(symbol) { %>
+  <div class="sprite-items">
+    <svg class="icon <%= symbol.id %>"><use xlink:href="#<%= symbol.id %>"></use></svg>
+    <p class='sprite-items-id'><%= symbol.id %></p>
+    <div class="sprite-items-code">
+        <pre><code>
+svg class="icon <%= symbol.id %>"
+  use xlink:href="#<%= symbol.id %>"
+
+</code></pre>
+    </div>
+  </div>
+<% }); %>
+<!-- @include ./sprite.min.svg -->
+</div>
+
+<style>
+  .sprite {
+    display: flex;
+    flex-wrap: wrap;
+    padding: 15px;
+    margin-left: -20px;
+  }
+  .sprite-items {
+    box-sizing: border-box;
+    width: calc(25% - 15px);
+    margin: 0 0 20px 15px;
+    padding: 20px 15px 0;
+    text-align: center;
+    background: #F4F4F4;
+    border: 1px solid black;
+  }
+
+  .sprite-items svg {
+    width: 80%;
+    max-width: 80%;
+    height: 100px;
+  }
+
+  .sprite-items-id {
+    text-align: center;
+    font-size: 13px;
+  }
+
+  .sprite-items-code {
+    padding: 5px 15px;
+    margin: 0 -15px 0;
+    background-color: black;
+    color: #fff;
+    font-size: 11px;
+    line-height: 1.1;
+  }
+
+  .sprite-items-code pre {
+    margin: 0;
+    text-align: left;
+  }
+</style>
